@@ -1,12 +1,14 @@
-import { useState } from 'react'
+import Authenticate from './components/Authenticate';
+import SignUpForm from './components/SignUpForm';
 import './App.css'
 
 const App = () => {
   return (
     <>
-     <h1>React Forms</h1>
+    <Authenticate />
+    <SignUpForm />
     </>
-  )
-}
+  );
+};
 
 export default App
