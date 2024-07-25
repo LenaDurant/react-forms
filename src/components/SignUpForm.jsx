@@ -8,7 +8,7 @@ const SignUpForm = () => {
   const handleSubmit = async(event) => {
     event.preventDefault(); 
   try {
-    const response = await fetch('https://fsa-jwt-practice.herokuapp.com/signup'),
+    const response = await fetch('https://fsa-jwt-practice.herokuapp.com/signup',
     {  
     method: 'POST',
       headers: {
@@ -18,7 +18,7 @@ const SignUpForm = () => {
         username: username,
         password: password,
       })
-    }
+    });
 
     const result = await response.json();
     setUsername("");
